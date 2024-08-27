@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="Logo" class="header__imagen">
+        <h1>Encriptador/desencriptador de Texto</h1>
+    </header>
+    <main class="home">
+        <section class="home__content">
+            <textarea placeholder="Ingresa tú texto aquí" rows="14" class="home__content__input"></textarea>
+            <p class="home__content__advertencia">Ingresa solo letras minusculas!</p>
+            <div class="home__content__botones">
+                <button class="home__content__botones__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="home__content__botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="home__desencriptado">
+            <img class="home__desencriptado__imagen" src="./assets/lupa.png" alt="Lupa" id="placeholderImage">   
+            <div class="home__desencriptado__encriptado" id="outputText">El texto aparecerá aquí!</div>         
+            <button class="home__desencriptado__botones__copiar" onclick="copiar()" id="copyButton" style="display:none;">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Version 0.1.3 - Desarrollado por Fabricio Leon - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
